@@ -24,6 +24,7 @@ class CreateCharacters < ActiveRecord::Migration[5.0]
       t.integer :max_def_increment
       t.integer :max_mag_increment
       t.integer :max_spr_increment
+      t.integer :ability_slots
 
       t.timestamps
     end
