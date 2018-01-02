@@ -1,24 +1,17 @@
-# README
+# EXVIUS-DB
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This application is intended to provide users with information pertaining to the mobile RPG game Final Fantasy Exvius.
 
-Things you may want to cover:
+Features of the app include:
 
-* Ruby version
+* Character info such as stats, evolution materials, limit bursts, etc.
 
-* System dependencies
+* A full list of equipments and items 
 
-* Configuration
+* Selecting a character and testing equipment/ability options 
 
-* Database creation
+* Creating a team and gathering overall stats
 
-* Database initialization
 
-* How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
 
-* Deployment instructions
-
-* ...

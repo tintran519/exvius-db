@@ -1,0 +1,2 @@
+class CharacterResistance < ApplicationRecord
+end
