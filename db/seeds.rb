@@ -5,3 +5,24 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+#  Test Seed Data
+Character.destroy_all
+Resistance.destroy_all
+
+character_cloud = Character.create(
+  name: "Cloud",
+  image_url: "https://d1u5p3l4wpay3k.cloudfront.net/exvius_gamepedia_en/8/84/Unit-Cloud-5.png?version=d294503a5a4135c248ff58abad643bce",
+  rarity: 5,
+  job: "soldier"
+  )
+
+resistance_confuse_fifty = Resistance.create(
+  resist_type: "status_ailment",
+  name: "confuse",
+  percentage: 0.5)
+
+character_cloud.character_resistances.create(
+  resistance: resistance_confuse_fifty
+)
+
