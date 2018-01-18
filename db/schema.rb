@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180102075009) do
+ActiveRecord::Schema.define(version: 20180102080822) do
 
   create_table "character_resistances", force: :cascade do |t|
     t.integer  "character_id"
@@ -61,6 +61,13 @@ ActiveRecord::Schema.define(version: 20180102075009) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "equipment_resistances", force: :cascade do |t|
+    t.integer  "equipment_id"
+    t.integer  "resistance_id"
+    t.datetime "created_at",    null: false
+    t.datetime "updated_at",    null: false
+  end
+
   create_table "equipment_types", force: :cascade do |t|
     t.integer  "equipment_id"
     t.string   "name"
@@ -70,11 +77,11 @@ ActiveRecord::Schema.define(version: 20180102075009) do
   end
 
   create_table "resistances", force: :cascade do |t|
-    t.string   "type"
+    t.string   "resist_type"
     t.string   "name"
-    t.decimal  "percentage"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.float    "percentage"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
   end
 
 end

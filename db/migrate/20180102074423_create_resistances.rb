@@ -1,9 +1,9 @@
 class CreateResistances < ActiveRecord::Migration[5.0]
   def change
     create_table :resistances do |t|
-      t.string :type
+      t.string :resist_type
       t.string :name
-      t.decimal :percentage
+      t.float :percentage
 
       t.timestamps
     end
